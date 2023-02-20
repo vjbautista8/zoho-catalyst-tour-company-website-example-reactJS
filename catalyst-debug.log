@@ -1,0 +1,498 @@
+[debug] [2023-02-19T13:24:37.587Z] : 
+[debug] [2023-02-19T13:24:37.588Z] : ----------------------------------------------------------------------
+[debug] [2023-02-19T13:24:37.589Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2023-02-19T13:24:37.589Z] : CLI Version:  1.13.3
+[debug] [2023-02-19T13:24:37.589Z] : Platform:     win32
+[debug] [2023-02-19T13:24:37.590Z] : Node Version: v18.12.1
+[debug] [2023-02-19T13:24:37.591Z] : Time:         Sun Feb 19 2023 21:24:37 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-19T13:24:37.591Z] : ----------------------------------------------------------------------
+[debug] [2023-02-19T13:24:37.591Z] : 
+[debug] [2023-02-19T13:24:38.235Z] : > authorizing via signed-in user option
+[debug] [2023-02-19T13:24:38.236Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-19T13:24:38.247Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000091009 
+
+[debug] [2023-02-19T13:24:38.846Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 13:24:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=2f20b587-2e91-465d-9e3e-f51251f16c36;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2f20b587-2e91-465d-9e3e-f51251f16c36;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T13:24:38.856Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000091009/environment 
+
+[debug] [2023-02-19T13:24:39.402Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 13:24:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=11d3ef30-0458-48a7-8c9b-469eb9a1e7e5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=11d3ef30-0458-48a7-8c9b-469eb9a1e7e5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T13:24:39.423Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000091009/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-19T13:24:39.982Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 13:24:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=5764d374-f295-4edc-b3f3-c42afbb1e615;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5764d374-f295-4edc-b3f3-c42afbb1e615;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T13:24:39.991Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-19T13:24:40.241Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/12143000000091009/server/upsert 
+
+[debug] [2023-02-19T13:24:41.537Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 13:24:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=60d6746f-5e89-429a-8c74-dcee472c7dc5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=60d6746f-5e89-429a-8c74-dcee472c7dc5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-19T13:24:41.683Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2023-02-19T13:24:41.683Z] : i Building Application...
+[info] [2023-02-19T13:24:43.487Z] : [react-plugin]: Creating an optimized production build...
+[info] [2023-02-19T13:24:51.704Z] : [react-plugin]: Compiled successfully.
+
+[info] [2023-02-19T13:24:51.705Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2023-02-19T13:24:51.717Z] : [react-plugin]:   47.15 kB (-29 B)  build\static\js\main.eca235bc.js
+[info] [2023-02-19T13:24:51.719Z] : [react-plugin]:   2.35 kB (+57 B)   build\static\css\main.2f3479cf.css
+[info] [2023-02-19T13:24:51.719Z] : [react-plugin]:  
+[debug] [2023-02-19T13:24:51.993Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/12143000000091009/webapp 
+
+[debug] [2023-02-19T13:24:55.728Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 13:24:56 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=6ab90d32-b9e3-43d0-931e-d24996b58df0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6ab90d32-b9e3-43d0-931e-d24996b58df0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-19T13:24:55.729Z] : 
+[info] [2023-02-19T13:24:55.729Z] : i functions(back_roads_function): URL => https://backroads-771945458.development.catalystserverless.com/server/back_roads_function/
+[info] [2023-02-19T13:24:55.729Z] : √ functions(back_roads_function): deploy successful
+[info] [2023-02-19T13:24:55.730Z] : 
+[info] [2023-02-19T13:24:55.730Z] : √ client: deploy successful
+[info] [2023-02-19T13:24:55.730Z] : i client: URL => https://backroads-771945458.development.catalystserverless.com/app/index.html
+[info] [2023-02-19T13:24:55.731Z] : 
+[info] [2023-02-19T13:24:55.731Z] : √ Catalyst deploy complete!
+[debug] [2023-02-19T13:24:55.731Z] : NO ERRORS REGISTERED
+[debug] [2023-02-19T13:24:55.732Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-02-19T13:24:55.732Z] : TOTAL DURATION OF COMMAND EXEC : 17511
+[debug] [2023-02-19T13:24:55.744Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-19T13:24:57.715Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 13:24:58 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=b02c9a26-a23b-4256-9ba2-255a12e3effb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b02c9a26-a23b-4256-9ba2-255a12e3effb;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=BF4BF7CBE4844A2B8780EFAB3D5FBBC1; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-19T13:24:57.715Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-19T13:24:57.717Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-19T15:14:39.642Z] : 
+[debug] [2023-02-19T15:14:39.644Z] : ----------------------------------------------------------------------
+[debug] [2023-02-19T15:14:39.644Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-19T15:14:39.645Z] : CLI Version:  1.13.3
+[debug] [2023-02-19T15:14:39.645Z] : Platform:     win32
+[debug] [2023-02-19T15:14:39.646Z] : Node Version: v18.12.1
+[debug] [2023-02-19T15:14:39.647Z] : Time:         Sun Feb 19 2023 23:14:39 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-19T15:14:39.647Z] : ----------------------------------------------------------------------
+[debug] [2023-02-19T15:14:39.647Z] : 
+[debug] [2023-02-19T15:14:40.296Z] : > authorizing via signed-in user option
+[debug] [2023-02-19T15:14:40.296Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-19T15:14:40.307Z] : > refreshing access token <
+[debug] [2023-02-19T15:14:40.308Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-02-19T15:14:40.935Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 15:14:41 GMT","content-type":"application/json;charset=UTF-8","content-length":"2728","connection":"close","set-cookie":["b266a5bf57=dcb92d0f99dd7421201f8dc746d54606; Path=/","iamcsr=1292f32c-99d1-478a-83ee-4e58c1c46d30;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1292f32c-99d1-478a-83ee-4e58c1c46d30;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T15:14:40.954Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000091009 
+
+[debug] [2023-02-19T15:14:41.602Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 15:14:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=64c4fc61-6312-4f7e-a0c1-94644a39ca4b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=64c4fc61-6312-4f7e-a0c1-94644a39ca4b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T15:14:41.605Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000091009/environment 
+
+[debug] [2023-02-19T15:14:42.159Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 15:14:43 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=e0462690-6145-4284-944e-9315b35099ec;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e0462690-6145-4284-944e-9315b35099ec;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T15:14:42.328Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000091009/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-19T15:14:42.894Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 15:14:43 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=094b3c13-74b1-4f72-a8ef-ee16e3c616ad;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=094b3c13-74b1-4f72-a8ef-ee16e3c616ad;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-19T15:14:42.896Z] : unknown eol undefined hence skipping check
+[info] [2023-02-19T15:14:42.940Z] : i server[back_roads_function]: URL : http://localhost:3000/server/back_roads_function/
+[info] [2023-02-19T15:14:42.941Z] : 
+[info] [2023-02-19T15:14:45.660Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-19T15:14:45.662Z] : i client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-19T15:14:47.954Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-19T15:14:47.955Z] : [react-plugin]: 
+[info] [2023-02-19T15:14:47.955Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-19T15:14:47.955Z] : [react-plugin]: 
+[info] [2023-02-19T15:14:47.955Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-19T15:14:47.956Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-19T15:14:47.956Z] : [react-plugin]: 
+[info] [2023-02-19T15:14:47.956Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-19T15:14:47.956Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-19T15:14:47.957Z] : [react-plugin]: 
+[info] [2023-02-19T15:15:43.490Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:15:45.041Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-19T15:15:45.042Z] : [react-plugin]: 
+[info] [2023-02-19T15:15:45.042Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-19T15:15:45.042Z] : [react-plugin]: 
+[info] [2023-02-19T15:15:45.043Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-19T15:15:45.044Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-19T15:15:45.044Z] : [react-plugin]: 
+[info] [2023-02-19T15:15:45.044Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-19T15:15:45.045Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-19T15:15:45.045Z] : [react-plugin]: 
+[info] [2023-02-19T15:16:19.255Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:16:19.678Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-19T15:16:19.678Z] : [react-plugin]: 
+[info] [2023-02-19T15:16:19.679Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-19T15:16:19.679Z] : [react-plugin]: 
+[info] [2023-02-19T15:16:19.679Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-19T15:16:19.679Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-19T15:16:19.680Z] : [react-plugin]: 
+[info] [2023-02-19T15:16:19.680Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-19T15:16:19.680Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-19T15:16:19.680Z] : [react-plugin]: 
+[info] [2023-02-19T15:24:12.737Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:24:13.017Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:24:13.017Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:24:13.017Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:24:13.018Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:24:26.409Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:24:26.642Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:24:26.643Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:24:26.643Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:24:26.643Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:24:39.959Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:24:40.169Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:24:40.169Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:24:40.170Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:24:40.170Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:24:48.495Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:24:48.669Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:24:48.669Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:24:48.669Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:24:48.670Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:24:52.894Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:24:53.081Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:24:53.081Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:24:53.082Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:24:53.082Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:24:58.067Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:24:58.207Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:24:58.207Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:24:58.207Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:24:58.207Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:29:46.123Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:29:46.465Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:29:46.465Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:29:46.466Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:29:46.466Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:30:24.277Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:30:24.495Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:30:24.495Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:30:24.496Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:30:24.496Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:30:35.958Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:30:36.125Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:30:36.125Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:30:36.125Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:30:36.125Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:31:02.916Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:31:03.082Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:31:03.082Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:31:03.082Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:31:03.083Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:31:49.048Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:31:49.254Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:31:49.254Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:31:49.254Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:31:49.254Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:32:29.572Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:32:29.767Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:32:29.767Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:32:29.767Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:32:29.767Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:34:50.946Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:34:51.267Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:34:51.268Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:34:51.268Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:34:51.268Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:35:18.003Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:35:18.252Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:35:18.253Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:35:18.253Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:35:18.253Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:35:34.017Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:35:34.241Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:35:34.241Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:35:34.241Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:35:34.242Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:35:59.456Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:35:59.619Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:35:59.620Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:  'logo' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:35:59.620Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:35:59.620Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:37:42.582Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:37:43.024Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:37:43.025Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:37:43.025Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:37:43.025Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:37:53.792Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:37:54.053Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:37:54.053Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:37:54.054Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:37:54.054Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:38:05.424Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:38:05.620Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:38:05.620Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:38:05.621Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:38:05.621Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:38:44.258Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:38:44.516Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:38:44.516Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:38:44.516Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:38:44.517Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:39:14.529Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:39:14.779Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:39:14.779Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:39:14.780Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:39:14.780Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:39:24.212Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:39:24.405Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:39:24.405Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:39:24.406Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:39:24.406Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:39:27.688Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:39:27.861Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:39:27.861Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:39:27.861Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:39:27.862Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:39:36.249Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:39:36.418Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:39:36.419Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:39:36.419Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:39:36.420Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:40:19.185Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:40:19.432Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:40:19.432Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:40:19.432Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:40:19.433Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:40:24.925Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:40:25.123Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:40:25.123Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:40:25.123Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:40:25.124Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:41:46.986Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:41:47.250Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:41:47.251Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:41:47.251Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:41:47.251Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:42:59.860Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:43:01.809Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:43:01.809Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+[info] [2023-02-19T15:43:01.809Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:43:01.809Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:43:58.633Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:43:58.977Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:43:58.978Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+  Line 4:10:  'SiZoho' is defined but never used     no-unused-vars
+[info] [2023-02-19T15:43:58.978Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:43:58.978Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:44:58.064Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:44:58.327Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:44:58.327Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+  Line 4:10:  'SiZoho' is defined but never used     no-unused-vars
+[info] [2023-02-19T15:44:58.327Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:44:58.327Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:45:30.292Z] : [react-plugin]: Compiling...
+[info] [2023-02-19T15:45:30.501Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-19T15:45:30.502Z] : [react-plugin]: [eslint] 
+src\components\NavBar.js
+  Line 1:8:   'logo' is defined but never used       no-unused-vars
+  Line 3:10:  'FaBars' is defined but never used     no-unused-vars
+  Line 3:18:  'FaTwitter' is defined but never used  no-unused-vars
+  Line 4:10:  'SiZoho' is defined but never used     no-unused-vars
+[info] [2023-02-19T15:45:30.502Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-19T15:45:30.502Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-19T15:48:03.244Z] : Shutting down server
+[info] [2023-02-19T15:48:03.258Z] : 
+[info] [2023-02-19T15:48:03.259Z] : √ Shutdown complete
+[debug] [2023-02-19T15:48:03.260Z] : NO ERRORS REGISTERED
+[debug] [2023-02-19T15:48:03.261Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-19T15:48:03.261Z] : TOTAL DURATION OF COMMAND EXEC : 2002976
+[debug] [2023-02-19T15:48:03.305Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-19T15:48:05.340Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sun, 19 Feb 2023 15:48:06 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=80478282-5d33-4399-a040-4389a2b35cf6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=80478282-5d33-4399-a040-4389a2b35cf6;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=9E54CBAA9270A5034CFE8EAC2B66FBA8; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-19T15:48:05.344Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-19T15:48:05.350Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
